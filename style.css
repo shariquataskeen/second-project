@@ -1,0 +1,2023 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+.hamburger-icon {
+    display: none;
+}
+
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+}
+
+.hamburger-icon {
+    border: none;
+    background-color: transparent;
+}
+
+.hamburger-icon .fa-bars,
+.hamburger-icon .fa-x {
+    color: black;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.hamburger-icon input[type="checkbox"] {
+    appearance: none;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    width: 50%;
+    font-size: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px;
+    width: 8em;
+    text-align: center;
+    font-size: blod;
+    background-color: #afa492;
+    border-radius: 25px;
+    color: black;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.navigation a {
+    color: black;
+}
+
+.navigation a:hover {
+    color: #a06857;
+}
+
+@media screen and (max-width: 900px) {
+    header {
+        display: block;
+    }
+
+    .navigation {
+        height: 0;
+        overflow: hidden;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.5s ease-in-out;
+        width: 100%;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hamburger-icon {
+        display: block;
+    }
+
+    .fa-x {
+        display: none;
+    }
+
+    header:has(.hamburger-icon input[type="checkbox"]:checked) .navigation {
+        margin-top: 1rem;
+        height: 185px;
+    }
+
+    header:has(.hamburger-icon input[type="checkbox"]:checked) .fa-bars {
+        display: none;
+    }
+
+    header:has(.hamburger-icon input[type="checkbox"]:checked) .fa-x {
+        display: inline-block;
+    }
+}
+
+.homepage {
+    width: 100%;
+    height: 70vh;
+    background-color: #afa49a;
+}
+
+.home-text {
+    display: flex;
+    align-items: center;
+}
+
+.home-image img {
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 10px;
+    align-items: center;
+}
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    ;
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.text h1 {
+    font-size: 60px;
+    animation: blink 2s linear infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    ;
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.text p {
+    font-size: 25px;
+    animation: blink 2s linear infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    ;
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.btn1 {
+    padding: 10px;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    border-radius: 25px;
+    border: none;
+    text-decoration: none;
+    margin: 0px 13em 0px 0px;
+    text-align: center;
+    width: 8em;
+    animation: blink 2s linear infinite;
+}
+
+.btn1:hover {
+    background-color: white;
+    color: #000;
+    border: 2px solid black;
+}
+
+.home-content {
+    width: 100%;
+    height: 50vh;
+    background-color: #ddd8d1;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    ;
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.banner-text p {
+    padding-top: 150px;
+    font-size: 25px;
+    text-align: center;
+    animation: blink 2s linear infinite;
+}
+
+.products-content {
+    padding-top: 1em;
+    text-align: center;
+    font-size: 2em;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 20px;
+    white-space: nowrap;
+}
+
+.price {
+    font-size: 20px;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    ;
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.product-img img {
+    width: 180px;
+    height: 50%;
+    animation: blink 2s linear infinite;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.product-block {
+    position: relative;
+    width: 30%;
+    border-radius: 20px;
+    background-color: #f0ede8;
+    text-decoration: none;
+}
+
+.product-button {
+    display: flex;
+    gap: 40px;
+
+}
+
+.btn2 {
+    color: black;
+    font-size: 15px;
+    padding: 17px;
+    width: 7em;
+    border: none;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.btn2:hover {
+    border: 2px solid black;
+}
+
+.btn3 {
+    color: black;
+    font-size: 15px;
+    padding: 17px;
+    text-decoration: none;
+    border-radius: 25px;
+    border: 2px solid black;
+    background-color: rgb(241, 237, 237);
+}
+
+.btn3:hover {
+    background-color: #fff;
+}
+
+.poster video {
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+    margin-bottom: 60px;
+}
+
+.box1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.img1,
+.img2,
+.img3,
+.img4,
+.img5,
+.img6 {
+    position: relative;
+}
+
+.derma-img {
+    width: 530px;
+    height: 400px;
+}
+
+.clenser-img {
+    width: 280px;
+    height: 400px;
+}
+
+.choosen-text {
+    color: #fff;
+    position: absolute;
+    top: 6em;
+}
+
+.content1 {
+    position: absolute;
+    width: 60%;
+    top: 2em;
+    left: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content1 h1 {
+    font-size: 35px;
+}
+
+.content1 p {
+    font-size: 20px;
+}
+
+.btn5 {
+    border-radius: 40px;
+    background-color: #000;
+    font-size: 20px;
+    line-height: 20px;
+    width: 8em;
+    border: none;
+    padding: 16px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn5:hover {
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #000;
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.section-image img {
+    width: 100%;
+    height: 90vh;
+    border-radius: 20px;
+}
+
+.section-text {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;
+    padding: 4em;
+}
+
+.section-text h1 {
+    font-size: 40px;
+    line-height: 58px;
+    font-weight: 600;
+    animation: blink 2s linear infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    ;
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.section-text h5 {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    animation: blink 2s linear infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    ;
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.paragraph1 {
+    font-size: 18px;
+    animation: blink 2s linear infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    ;
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.btn6 {
+    width: 9em;
+    border-radius: 40px;
+    background-color: #000;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    white-space: nowrap;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    animation: blink 2s linear infinite;
+}
+
+.btn6:hover {
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #000;
+}
+
+.read h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.style1,
+.style2,
+.style3,
+.style4,
+.style5,
+.style6 {
+    position: relative;
+}
+
+.card-img {
+    width: 370px;
+    height: 370px;
+    border-radius: 20px;
+}
+
+.content {
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+
+.content h3 {
+    font-size: 19px;
+    color: white;
+}
+.content p {
+    font-size: 20px;
+    color: white;
+}
+.button{
+    display: flex;
+    gap: 40px;
+    position: absolute;
+    top: 17em;
+}
+.btn7 {
+    width: 9em;
+    color: black;
+    font-size: 15px;
+    padding: 15px;
+    border: none;
+    text-align: center;
+    border-radius: 25px;
+    background-color: white;
+    text-decoration: none;
+}
+
+.btn7:hover {
+    border: 2px solid black;
+}
+
+.btn8 {
+    width: 9em;
+    text-align: center;
+    padding: 15px;
+    font-size: 15px;
+    color: white;
+    border-radius: 25px;
+    border: 2px solid white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.btn8:hover {
+    background-color: black;
+    border: 2px solid black;
+}
+
+.steps h2 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.steps-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.main-content {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.step-text {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.step-container {
+    position: relative;
+}
+
+.step-text img {
+    padding: 10px;
+}
+
+.step-routine1 {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 15px;
+    color: #fff;
+    line-height: 1;
+    font-weight: 600;
+    background-color: #afa492;
+}
+
+.para-medium {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.underline {
+    display: inline-block;
+    border-bottom: 3px solid #d48d78;
+}
+
+
+.step-routine2 {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 15px;
+    color: #fff;
+    line-height: 1;
+    font-weight: 600;
+    background-color: #d48d78;
+}
+
+
+.step-routine3 {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 15px;
+    color: #fff;
+    line-height: 1;
+    font-weight: 600;
+    background-color: #a06857;
+}
+
+.step-routine4 {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 15px;
+    color: #fff;
+    line-height: 1;
+    font-weight: 600;
+    background-color: #ddd8d1;
+}
+
+.dot-line {
+    position: absolute;
+    left: 0%;
+    top: 20px;
+    right: 0%;
+    z-index: 0;
+    width: 80%;
+    height: 2px;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: url("https://assets.website-files.com/62541b2652f7df0dc2f4840e/6295fa2c809544ee160ffea2_dot.png");
+    background-position: 50% 50%;
+    background-size: auto;
+    background-repeat: repeat-x;
+}
+
+.instagram {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.instagram-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.instagram img {
+    height: 350px;
+    width: 350px;
+    border-radius: 20px;
+}
+
+.center-block h2 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.half-image{
+    width: 50%;
+    background: url("https://assets.website-files.com/62541b2652f7df0dc2f4840e/626f8688e402f5ffb714f978_footer-img.jpg");
+    background-repeat: no-repeat;
+}
+
+.half-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.half-image h1 {
+    font-size: 50px;
+    color: white;
+}
+.field-label {
+    font-size: 15px;
+    color: #fff;
+}
+
+.form-block input {
+    width: 350px;
+    height: 3em;
+}
+
+.text-field {
+    text-align: left;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    font-size: 15px;
+}
+
+.submit-button {
+    width: 25%;
+    font-size: 20px;
+    border: 3px solid #000;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+
+.half-container {
+    background-color: #afa492;
+    width: 50%;
+    height: auto;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 2em;
+    line-height: 2em;
+}
+
+.wrap img {
+    width: 9em;
+    height: 2em;
+    float: inline-end;
+}
+
+.last {
+    display: flex;
+    gap: 40px;
+}
+
+.last h4 {
+    font-size: 22px;
+    padding: 10px;
+}
+
+.last a {
+    text-decoration: none;
+    color: #000;
+}
+
+.last li {
+    list-style: none;
+}
+
+.span4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.span4 h3 {
+    font-size: 30px;
+}
+
+.span4 p {
+    font-size: 20px;
+}
+
+.span4 h4 {
+    font-size: 20px;
+}
+
+.span4 h6 {
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.span4 h1 {
+    font-size: 20px;
+}
+
+.link {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.copy {
+    font-size: 18px;
+}
+
+.icon {
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.icon i {
+    padding: 5px;
+    color: #000;
+}
+
+.icon i:hover {
+    color: #fff;
+}
+@media(max-width:1000px) {
+    .navigation {
+        white-space: nowrap;
+    }
+
+    .text h1 {
+        font-size: 47px;
+        white-space: nowrap;
+    }
+
+    .text p {
+        font-size: 20px;
+        white-space: nowrap;
+    }
+
+    .btn1 {
+        margin: 0px 0px 0px 0px;
+    }
+
+    .home-text {
+        flex-direction: row;
+    }
+
+    .homepage {
+        width: 100%;
+        height: 20em;
+    }
+
+    .home-content {
+        width: 100%;
+        height: 18em;
+    }
+
+    .banner-text p {
+        font-size: 19px;
+        white-space: nowrap;
+    }
+
+    .products-content {
+        text-align: center;
+        font-size: 37px;
+    }
+
+    .box {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .btn3 {
+        white-space: nowrap;
+    }
+
+    .product {
+        font-size: 23px;
+    }
+
+    .product-block {
+        width: 31%;
+        height: 40%;
+    }
+
+    .poster video {
+        width: 100%;
+    }
+
+    .derma-img {
+        width: 95%;
+        padding-left: 20px;
+    }
+
+    .content1 h1 {
+        font-size: 35px;
+    }
+
+    .content1 p {
+        font-size: 15px;
+    }
+
+    .clenser-img {
+        width: 99%;
+    }
+
+    .section-image img {
+        height: 60vh;
+    }
+
+    .section-text h1 {
+        font-size: 45px;
+    }
+
+    .read h1 {
+        font-size: 40px;
+    }
+
+    .cards {
+        gap: 25px;
+    }
+
+    .card-img {
+        width: 105%;
+    }
+
+    .content h3 {
+        font-size: 16px;
+    }
+
+    .content p {
+        font-size: 15px;
+    }
+
+    .steps h2 {
+        font-size: 40px;
+    }
+
+    .steps-wrapper {
+        flex-direction: row;
+    }
+
+    .center-block h2 {
+        font-size: 40px;
+    }
+
+    .instagram img {
+        width: 35%;
+        height: 40vh;
+    }
+
+    .half-image {
+        width: 100%;
+    }
+
+    .form-block input {
+        width: 123%;
+    }
+    .copy {
+        font-size: 16px;
+    }
+    .half-container{
+        width: 100%;
+    }
+}
+
+@media(max-width:860px) {
+    .menu {
+        display: none;
+    }
+
+    .text h1 {
+        font-size: 47px;
+        white-space: nowrap;
+    }
+
+    .text p {
+        font-size: 20px;
+        white-space: nowrap;
+    }
+
+    .btn1 {
+        margin: 0px 0px 0px 0px;
+    }
+
+    .home-text {
+        flex-direction: row;
+    }
+
+    .homepage {
+        width: 100%;
+        height: 18em;
+    }
+
+    .home-content {
+        width: 100%;
+    }
+
+    .banner-text p {
+        font-size: 19px;
+        white-space: nowrap;
+    }
+
+    .products-content {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .box {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .product {
+        font-size: 23px;
+    }
+
+    .product-block {
+        width: 44%;
+        height: 40%;
+    }
+
+    .poster video {
+        width: 100%;
+    }
+
+    .derma-img {
+        width: 95%;
+        padding-left: 20px;
+    }
+
+    .content1 h1 {
+        font-size: 35px;
+    }
+
+    .content1 p {
+        font-size: 15px;
+    }
+
+    .clenser-img {
+        width: 99%;
+    }
+
+    .section-image img {
+        height: 87vh;
+    }
+
+    .section-text h1 {
+        font-size: 45px;
+    }
+
+    .read h1 {
+        font-size: 40px;
+    }
+
+    .cards {
+        gap: 18px;
+    }
+
+    .card-img {
+        width: 103%;
+    }
+
+    .content h3 {
+        font-size: 16px;
+    }
+
+    .content p {
+        font-size: 15px;
+    }
+
+    .steps h2 {
+        font-size: 40px;
+    }
+
+    .dot-line {
+        display: none;
+    }
+
+    .steps-wrapper {
+        flex-direction: column;
+    }
+
+    .center-block h2 {
+        font-size: 40px;
+    }
+
+    .instagram img {
+        width: 48%;
+        height: 67vh;
+    }
+ 
+    .half-image{
+        width: 100%;
+    }
+    .half-container{
+        width: 100%;
+    }
+    .form-block input {
+        width: 123%;
+    }
+
+    .copy {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:790px) {
+    .menu {
+        display: none;
+    }
+
+    .text h1 {
+        font-size: 47px;
+        white-space: nowrap;
+    }
+
+    .text p {
+        font-size: 20px;
+        white-space: nowrap;
+    }
+
+    .btn1 {
+        margin: 0px 0px 0px 0px;
+    }
+
+    .home-text {
+        flex-direction: row;
+    }
+
+    .homepage {
+        width: 100%;
+        height: 18em;
+    }
+
+    .home-content {
+        width: 100%;
+        height: 22em;
+    }
+
+    .banner-text p {
+        font-size: 19px;
+        white-space: nowrap;
+    }
+
+    .products-content {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .box {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .product {
+        font-size: 23px;
+    }
+
+    .product-block {
+        width: 44%;
+        height: 40%;
+    }
+
+    .poster video {
+        width: 100%;
+    }
+
+    .derma-img {
+        width: 95%;
+        padding-left: 20px;
+    }
+
+    .content1 h1 {
+        font-size: 35px;
+    }
+
+    .content1 p {
+        font-size: 15px;
+    }
+
+    .clenser-img {
+        width: 99%;
+    }
+
+    .section-image img {
+        height: 87vh;
+    }
+
+    .section-text h1 {
+        font-size: 45px;
+    }
+
+    .read h1 {
+        font-size: 40px;
+    }
+
+    .cards {
+        gap: 18px;
+    }
+
+    .card-img {
+        width: 103%;
+    }
+
+    .content h3 {
+        font-size: 16px;
+    }
+
+    .content p {
+        font-size: 15px;
+    }
+
+    .steps h2 {
+        font-size: 40px;
+    }
+
+    .dot-line {
+        display: none;
+    }
+
+    .steps-wrapper {
+        flex-direction: column;
+    }
+
+    .center-block h2 {
+        font-size: 40px;
+    }
+
+    .instagram img {
+        width: 38%;
+        height: 35vh;
+    }
+
+    .half-image{
+        width: 100%;
+    }
+    .half-container{
+        width: 100%;
+    }
+
+    .form-block input {
+        width: 123%;
+    }
+
+    .copy {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:630px) {
+    .menu {
+        display: none;
+    }
+
+    .text h1 {
+        font-size: 40px;
+        white-space: nowrap;
+    }
+
+    .text p {
+        font-size: 18px;
+        white-space: nowrap;
+    }
+
+    .home-text {
+        flex-direction: row;
+    }
+
+    .home-content {
+        width: 100%;
+        height: 18em;
+    }
+
+    .banner-text p {
+        font-size: 19px;
+        white-space: nowrap;
+    }
+
+    .products-content {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .box {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .product {
+        font-size: 23px;
+    }
+
+    .product-block {
+        width: 65%;
+        height: 40%;
+    }
+
+    .poster video {
+        width: 100%;
+    }
+
+    .derma-img {
+        width: 95%;
+        padding-left: 20px;
+    }
+
+    .content1 h1 {
+        font-size: 35px;
+    }
+
+    .content1 p {
+        font-size: 15px;
+    }
+
+    .clenser-img {
+        width: 99%;
+    }
+
+    .section-image img {
+        height: 75vh;
+    }
+
+    .section-text h1 {
+        font-size: 30px;
+    }
+
+    .read h1 {
+        font-size: 40px;
+    }
+
+    .card-img {
+        width: 103%;
+    }
+
+    .content h3 {
+        font-size: 17px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+
+    .steps h2 {
+        font-size: 30px;
+    }
+
+    .dot-line {
+        display: none;
+    }
+
+    .steps-wrapper {
+        flex-direction: column;
+    }
+
+    .center-block h2 {
+        font-size: 30px;
+    }
+
+    .instagram img {
+        width: 68%;
+        height: 60vh;
+    }
+
+    .half-image{
+        width: 100%;
+    }
+    .half-container{
+        width: 100%;
+    }
+
+    .form-block input {
+        width: 123%;
+    }
+    .copy {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:560px) {
+    .menu {
+        display: none;
+    }
+
+    .text h1 {
+        font-size: 33px;
+        white-space: nowrap;
+    }
+
+    .text p {
+        font-size: 15px;
+        white-space: nowrap;
+    }
+
+    .btn1 {
+        margin: 0px 0px 0px 0px;
+    }
+
+    .home-text {
+        flex-direction: row;
+    }
+
+    .home-content {
+        width: 100%;
+        height: 9em;
+    }
+
+    .banner-text p {
+        font-size: 14px;
+        white-space: nowrap;
+        padding-top: 4em;
+    }
+
+    .products-content {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .box {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .product {
+        font-size: 23px;
+    }
+
+    .product-block {
+        width: 96%;
+        height: 40%;
+    }
+
+    .poster video {
+        width: 100%;
+        object-fit: cover;
+        height: 60vh;
+    }
+
+    .derma-img {
+        width: 95%;
+        padding-left: 20px;
+    }
+
+    .content1 h1 {
+        font-size: 25px;
+    }
+
+    .content1 p {
+        font-size: 15px;
+    }
+
+    .clenser-img {
+        width: 99%;
+    }
+
+    .section-image img {
+        height: 65vh;
+    }
+
+    .section-text h1 {
+        font-size: 30px;
+    }
+
+    .read h1 {
+        font-size: 30px;
+    }
+
+    .card-img {
+        width: 110%;
+    }
+
+    .content h3 {
+        font-size: 17px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+
+    .steps h2 {
+        font-size: 30px;
+    }
+
+    .dot-line {
+        display: none;
+    }
+
+    .steps-wrapper {
+        flex-direction: column;
+    }
+
+    .center-block h2 {
+        font-size: 30px;
+    }
+
+    .instagram img {
+        width: 78%;
+        height: 65vh;
+    }
+    .half-image{
+        width: 100%;
+    }
+    .half-container{
+        width: 100%;
+    }
+    .form-block input {
+        width: 107%;
+    }
+
+    .copy {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:500px) {
+    .menu {
+        display: none;
+    }
+
+    .text h1 {
+        font-size: 47px;
+        white-space: nowrap;
+    }
+
+    .text p {
+        font-size: 20px;
+        white-space: nowrap;
+    }
+
+    .btn1 {
+        margin: 0px 0px 0px 0px;
+    }
+
+    .home-text {
+        flex-direction: column;
+    }
+
+    .home-content {
+        width: 100%;
+        height: 28em;
+    }
+
+    .banner-text p {
+        font-size: 14px;
+        white-space: nowrap;
+        padding-top: 25em;
+    }
+
+    .products-content {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .box {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .product {
+        font-size: 23px;
+    }
+
+    .product-block {
+        width: 96%;
+        height: 40%;
+    }
+
+    .poster video {
+        width: 100%;
+        object-fit: cover;
+        height: 60vh;
+    }
+
+    .derma-img {
+        width: 95%;
+        padding-left: 20px;
+    }
+
+    .content1 h1 {
+        font-size: 25px;
+    }
+
+    .content1 p {
+        font-size: 15px;
+    }
+
+    .clenser-img {
+        width: 99%;
+    }
+
+    .section-image img {
+        height: 50vh;
+    }
+
+    .section-text h1 {
+        font-size: 30px;
+    }
+
+    .read h1 {
+        font-size: 30px;
+    }
+
+    .card-img {
+        width: 103%;
+    }
+
+    .content h3 {
+        font-size: 17px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+
+    .steps h2 {
+        font-size: 30px;
+    }
+
+    .dot-line {
+        display: none;
+    }
+
+    .steps-wrapper {
+        flex-direction: column;
+    }
+
+    .center-block h2 {
+        font-size: 30px;
+    }
+
+    .instagram img {
+        width: 88%;
+        height: 65vh;
+    }
+
+    .half-image{
+        width: 100%;
+    }
+    .half-container{
+        width: 100%;
+    }
+
+    .form-block input {
+        width: 107%;
+    }
+
+    .copy {
+        font-size: 16px;
+    }
+    .last{
+        flex-direction: column;
+     }
+}
+
+@media(max-width:430px) {
+    .menu {
+        display: none;
+    }
+
+    .text h1 {
+        font-size: 47px;
+        white-space: nowrap;
+    }
+
+    .text p {
+        font-size: 20px;
+        white-space: nowrap;
+    }
+
+    .btn1 {
+        margin: 0px 0px 0px 0px;
+    }
+
+    .home-text {
+        flex-direction: column;
+    }
+
+    .homepage {
+        width: 100%;
+        height: 24em;
+    }
+
+    .home-content {
+        width: 100%;
+        height: 14em;
+    }
+
+    .banner-text p {
+        font-size: 11px;
+        white-space: nowrap;
+        padding-top: 13em;
+    }
+
+    .products-content {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .box {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .product {
+        font-size: 23px;
+    }
+
+    .product-block {
+        width: 96%;
+        height: 40%;
+    }
+
+    .poster video {
+        width: 100%;
+        object-fit: cover;
+        height: 60vh;
+    }
+
+    .derma-img {
+        width: 95%;
+        padding-left: 20px;
+    }
+
+    .content1 h1 {
+        font-size: 25px;
+    }
+
+    .content1 p {
+        font-size: 15px;
+    }
+
+    .clenser-img {
+        width: 99%;
+    }
+
+    .section-image img {
+        height: 50vh;
+    }
+
+    .section-text h1 {
+        font-size: 29px;
+    }
+
+    .read h1 {
+        font-size: 30px;
+    }
+
+    .card-img {
+        width: 103%;
+    }
+
+    .content h3 {
+        font-size: 16px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+
+    .steps h2 {
+        font-size: 30px;
+    }
+
+    .dot-line {
+        display: none;
+    }
+
+    .steps-wrapper {
+        flex-direction: column;
+    }
+
+    .center-block h2 {
+        font-size: 30px;
+    }
+
+    .instagram img {
+        width: 95%;
+        height: 55vh;
+    }
+
+    .half-image{
+        width: 100%;
+    }
+    .half-container{
+        width: 100%;
+    }
+
+    .form-block input {
+        width: 107%;
+    }
+    .copy {
+        font-size: 16px;
+    }
+    .last{
+        flex-direction: column;
+     }
+}
+
+@media(max-width:360px) {
+    .menu {
+        display: none;
+    }
+
+    .text h1 {
+        font-size: 43px;
+        white-space: nowrap;
+    }
+
+    .text p {
+        font-size: 18px;
+        white-space: nowrap;
+    }
+
+    .btn1 {
+        margin: 0px 0px 0px 0px;
+    }
+
+    .home-text {
+        flex-direction: column;
+    }
+
+    .homepage {
+        width: 100%;
+        height: 24em;
+    }
+
+    .home-content {
+        width: 100%;
+        height: 14em;
+    }
+
+    .banner-text p {
+        font-size: 10px;
+        white-space: nowrap;
+        padding-top: 10em;
+    }
+
+    .products-content {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .box {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .product {
+        font-size: 23px;
+    }
+
+    .product-block {
+        width: 96%;
+        height: 40%;
+    }
+
+    .poster video {
+        width: 100%;
+        object-fit: cover;
+        height: 60vh;
+    }
+
+    .derma-img {
+        width: 95%;
+        padding-left: 20px;
+    }
+
+    .content1 h1 {
+        font-size: 25px;
+    }
+
+    .content1 p {
+        font-size: 15px;
+    }
+
+    .clenser-img {
+        width: 99%;
+    }
+
+    .section-image img {
+        height: 50vh;
+    }
+    .section-text h1 {
+        font-size: 30px;
+    }
+
+    .read h1 {
+        font-size: 30px;
+    }
+
+    .card-img {
+        width: 100%;
+    }
+
+    .content h3 {
+        font-size: 16px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+     .button{
+        width: auto;
+        gap: 15px;
+     }
+    .steps h2 {
+        font-size: 30px;
+    }
+
+    .dot-line {
+        display: none;
+    }
+
+    .steps-wrapper {
+        flex-direction: column;
+    }
+
+    .center-block h2 {
+        font-size: 30px;
+    }
+
+    .instagram img {
+        width: 95%;
+        height: 55vh;
+    }
+
+    .half-image{
+        width: 100%;
+    }
+    .half-container{
+        width: 100%;
+    }
+
+    .form-block input {
+        width: 107%;
+    }
+     .last{
+        flex-direction: column;
+     }
+    .copy {
+        font-size: 16px;
+    }
+}
